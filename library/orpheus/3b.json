@@ -1,0 +1,13 @@
+{
+  "source": "canopylabs/orpheus-3b-0.1-ft",
+  "architecture": "orpheus",
+  "type": "tts",
+  "adapter": "orpheus",
+  "format": "pytorch",
+  "description": "Orpheus 3B \u2014 LLM-based emotional TTS",
+  "license": "Apache-2.0",
+  "parameters": {
+    "sample_rate": 24000
+  },
+  "adapter_package": "vox-orpheus"
+}

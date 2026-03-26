@@ -1,0 +1,13 @@
+{
+  "source": "sesame/csm-1b",
+  "architecture": "sesame",
+  "type": "tts",
+  "adapter": "sesame",
+  "format": "pytorch",
+  "description": "Sesame CSM 1B \u2014 context-aware conversational speech model",
+  "license": "Apache-2.0",
+  "parameters": {
+    "sample_rate": 24000
+  },
+  "adapter_package": "vox-sesame"
+}

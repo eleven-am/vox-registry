@@ -1,0 +1,13 @@
+{
+  "source": "nvidia/parakeet-tdt-0.6b-v2",
+  "architecture": "parakeet",
+  "type": "stt",
+  "adapter": "parakeet",
+  "format": "onnx",
+  "description": "NVIDIA Parakeet TDT 0.6B \u2014 top Open ASR Leaderboard model",
+  "license": "CC-BY-4.0",
+  "parameters": {
+    "sample_rate": 16000
+  },
+  "adapter_package": "vox-parakeet"
+}

@@ -1,0 +1,79 @@
+[
+  {
+    "name": "dia",
+    "tag": "1.6b",
+    "type": "tts",
+    "description": "Dia 1.6B \u2014 multi-speaker dialogue TTS with non-verbal sounds",
+    "adapter_package": "vox-dia"
+  },
+  {
+    "name": "fish-speech",
+    "tag": "v1.4",
+    "type": "tts",
+    "description": "Fish Speech 1.4 \u2014 high quality multilingual TTS with voice cloning",
+    "adapter_package": "vox-fish-speech"
+  },
+  {
+    "name": "kokoro",
+    "tag": "v1.0",
+    "type": "tts",
+    "description": "Kokoro 82M ONNX \u2014 fast, lightweight TTS with preset voices",
+    "adapter_package": "vox-kokoro"
+  },
+  {
+    "name": "orpheus",
+    "tag": "3b",
+    "type": "tts",
+    "description": "Orpheus 3B \u2014 LLM-based emotional TTS",
+    "adapter_package": "vox-orpheus"
+  },
+  {
+    "name": "parakeet",
+    "tag": "tdt-0.6b-v3",
+    "type": "stt",
+    "description": "NVIDIA Parakeet TDT 0.6B v3 \u2014 25 languages, streaming support",
+    "adapter_package": "vox-parakeet"
+  },
+  {
+    "name": "parakeet",
+    "tag": "tdt-0.6b",
+    "type": "stt",
+    "description": "NVIDIA Parakeet TDT 0.6B \u2014 top Open ASR Leaderboard model",
+    "adapter_package": "vox-parakeet"
+  },
+  {
+    "name": "piper",
+    "tag": "en-us-lessac-medium",
+    "type": "tts",
+    "description": "Piper English US Lessac Medium voice",
+    "adapter_package": "vox-piper"
+  },
+  {
+    "name": "sesame",
+    "tag": "csm-1b",
+    "type": "tts",
+    "description": "Sesame CSM 1B \u2014 context-aware conversational speech model",
+    "adapter_package": "vox-sesame"
+  },
+  {
+    "name": "whisper",
+    "tag": "base.en",
+    "type": "stt",
+    "description": "OpenAI Whisper Base English \u2014 small and fast",
+    "adapter_package": "vox-whisper"
+  },
+  {
+    "name": "whisper",
+    "tag": "large-v3-turbo",
+    "type": "stt",
+    "description": "OpenAI Whisper Large V3 Turbo \u2014 faster with minor quality loss",
+    "adapter_package": "vox-whisper"
+  },
+  {
+    "name": "whisper",
+    "tag": "large-v3",
+    "type": "stt",
+    "description": "OpenAI Whisper Large V3 via CTranslate2",
+    "adapter_package": "vox-whisper"
+  }
+]

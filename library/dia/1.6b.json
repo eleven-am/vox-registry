@@ -1,0 +1,13 @@
+{
+  "source": "nari-labs/Dia-1.6B",
+  "architecture": "dia",
+  "type": "tts",
+  "adapter": "dia",
+  "format": "pytorch",
+  "description": "Dia 1.6B \u2014 multi-speaker dialogue TTS with non-verbal sounds",
+  "license": "Apache-2.0",
+  "parameters": {
+    "sample_rate": 44000
+  },
+  "adapter_package": "vox-dia"
+}

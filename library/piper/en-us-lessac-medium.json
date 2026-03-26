@@ -1,0 +1,13 @@
+{
+  "source": "rhasspy/piper-voices",
+  "architecture": "piper",
+  "type": "tts",
+  "adapter": "piper",
+  "format": "onnx",
+  "description": "Piper English US Lessac Medium voice",
+  "license": "MIT",
+  "parameters": {
+    "sample_rate": 22050
+  },
+  "adapter_package": "vox-piper"
+}
