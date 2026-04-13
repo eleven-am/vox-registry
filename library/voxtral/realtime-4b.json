@@ -1,0 +1,13 @@
+{
+  "source": "mistralai/Voxtral-Mini-4B-Realtime-2602",
+  "architecture": "voxtral-realtime",
+  "type": "stt",
+  "adapter": "voxtral-stt",
+  "format": "pytorch",
+  "description": "Mistral Voxtral Realtime 4B \u2014 sub-500ms latency transcription, 13 languages",
+  "license": "Apache-2.0",
+  "parameters": {
+    "sample_rate": 16000
+  },
+  "adapter_package": "vox-voxtral"
+}

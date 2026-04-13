@@ -1,0 +1,13 @@
+{
+  "source": "mistralai/Voxtral-4B-TTS-2603",
+  "architecture": "voxtral-tts",
+  "type": "tts",
+  "adapter": "voxtral-tts",
+  "format": "pytorch",
+  "description": "Mistral Voxtral TTS 4B \u2014 zero-shot voice cloning, 9 languages, ~90ms TTFA",
+  "license": "CC-BY-NC-4.0",
+  "parameters": {
+    "sample_rate": 24000
+  },
+  "adapter_package": "vox-voxtral"
+}

@@ -49,11 +49,95 @@
     "adapter_package": "vox-piper"
   },
   {
+    "name": "qwen3-asr",
+    "tag": "0.6b",
+    "type": "stt",
+    "description": "Alibaba Qwen3-ASR 0.6B \u2014 lightweight 52-language speech recognition",
+    "adapter_package": "vox-qwen"
+  },
+  {
+    "name": "qwen3-asr",
+    "tag": "1.7b",
+    "type": "stt",
+    "description": "Alibaba Qwen3-ASR 1.7B \u2014 52 languages, word timestamps",
+    "adapter_package": "vox-qwen"
+  },
+  {
+    "name": "qwen3-tts",
+    "tag": "0.6b",
+    "type": "tts",
+    "description": "Alibaba Qwen3-TTS 0.6B \u2014 lightweight multilingual TTS with voice cloning",
+    "adapter_package": "vox-qwen"
+  },
+  {
+    "name": "qwen3-tts",
+    "tag": "1.7b",
+    "type": "tts",
+    "description": "Alibaba Qwen3-TTS 1.7B \u2014 multilingual TTS with voice cloning and streaming",
+    "adapter_package": "vox-qwen"
+  },
+  {
     "name": "sesame",
     "tag": "csm-1b",
     "type": "tts",
     "description": "Sesame CSM 1B \u2014 context-aware conversational speech model",
     "adapter_package": "vox-sesame"
+  },
+  {
+    "name": "speecht5",
+    "tag": "asr",
+    "type": "stt",
+    "description": "Microsoft SpeechT5 ASR \u2014 lightweight speech recognition",
+    "adapter_package": "vox-microsoft"
+  },
+  {
+    "name": "speecht5",
+    "tag": "tts",
+    "type": "tts",
+    "description": "Microsoft SpeechT5 TTS \u2014 lightweight text-to-speech with speaker embeddings",
+    "adapter_package": "vox-microsoft"
+  },
+  {
+    "name": "vibevoice",
+    "tag": "1.5b",
+    "type": "tts",
+    "description": "Microsoft VibeVoice 1.5B \u2014 high-quality TTS with 64K token context",
+    "adapter_package": "vox-microsoft"
+  },
+  {
+    "name": "vibevoice",
+    "tag": "realtime-0.5b",
+    "type": "tts",
+    "description": "Microsoft VibeVoice Realtime 0.5B \u2014 ~300ms streaming TTS",
+    "adapter_package": "vox-microsoft"
+  },
+  {
+    "name": "voxtral",
+    "tag": "mini-3b",
+    "type": "stt",
+    "description": "Mistral Voxtral Mini 3B \u2014 audio understanding and transcription",
+    "adapter_package": "vox-voxtral"
+  },
+  {
+    "name": "voxtral",
+    "tag": "realtime-4b",
+    "type": "stt",
+    "description": "Mistral Voxtral Realtime 4B \u2014 sub-500ms latency transcription, 13 languages",
+    "adapter_package": "vox-voxtral"
+  },
+  {
+    "name": "voxtral",
+    "tag": "small-24b",
+    "type": "stt",
+    "description": "Mistral Voxtral Small 24B \u2014 high-quality audio understanding and transcription",
+    "adapter_package": "vox-voxtral"
+  },
+  {
+    "name": "voxtral",
+    "tag": "tts-4b",
+    "type": "tts",
+    "description": "Mistral Voxtral TTS 4B \u2014 zero-shot voice cloning, 9 languages, ~90ms TTFA",
+    "adapter_package": "vox-voxtral"
   },
   {
     "name": "whisper",

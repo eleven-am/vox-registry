@@ -1,0 +1,13 @@
+{
+  "source": "microsoft/speecht5_tts",
+  "architecture": "speecht5-tts",
+  "type": "tts",
+  "adapter": "speecht5-tts",
+  "format": "pytorch",
+  "description": "Microsoft SpeechT5 TTS \u2014 lightweight text-to-speech with speaker embeddings",
+  "license": "MIT",
+  "parameters": {
+    "sample_rate": 16000
+  },
+  "adapter_package": "vox-microsoft"
+}
