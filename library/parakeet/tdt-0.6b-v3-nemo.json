@@ -12,5 +12,5 @@
   "files": [
     "parakeet-tdt-0.6b-v3.nemo"
   ],
-  "adapter_package": "vox-parakeet-nemo"
+  "adapter_package": "vox-parakeet"
 }

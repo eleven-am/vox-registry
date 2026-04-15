@@ -60,14 +60,14 @@
     "tag": "tdt-0.6b-v3-cuda",
     "type": "stt",
     "description": "NVIDIA Parakeet TDT 0.6B v3 — CUDA/NeMo backend alias",
-    "adapter_package": "vox-parakeet-nemo"
+    "adapter_package": "vox-parakeet"
   },
   {
     "name": "parakeet",
     "tag": "tdt-0.6b-v3-nemo",
     "type": "stt",
     "description": "NVIDIA Parakeet TDT 0.6B v3 — native NeMo/PyTorch CUDA ASR",
-    "adapter_package": "vox-parakeet-nemo"
+    "adapter_package": "vox-parakeet"
   },
   {
     "name": "piper",
