@@ -1,0 +1,15 @@
+{
+  "name": "vibevoice-tts-torch",
+  "tag": "1.5b",
+  "source": "microsoft/VibeVoice-1.5B",
+  "architecture": "vibevoice",
+  "type": "tts",
+  "adapter": "vibevoice-tts-torch",
+  "format": "pytorch",
+  "description": "Microsoft VibeVoice 1.5B \u2014 high-quality TTS with 64K token context",
+  "license": "MIT",
+  "parameters": {
+    "sample_rate": 24000
+  },
+  "adapter_package": "vox-microsoft"
+}

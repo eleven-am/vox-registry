@@ -1,0 +1,18 @@
+{
+  "name": "parakeet-stt-nemo",
+  "tag": "tdt-1.1b",
+  "source": "nvidia/parakeet-tdt-1.1b",
+  "architecture": "parakeet-nemo",
+  "type": "stt",
+  "adapter": "parakeet-stt-nemo",
+  "format": "pytorch",
+  "description": "NVIDIA Parakeet TDT 1.1B \u2014 larger native NeMo/PyTorch CUDA ASR",
+  "license": "CC-BY-4.0",
+  "parameters": {
+    "sample_rate": 16000
+  },
+  "files": [
+    "parakeet-tdt-1.1b.nemo"
+  ],
+  "adapter_package": "vox-parakeet"
+}

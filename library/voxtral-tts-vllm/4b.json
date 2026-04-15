@@ -1,0 +1,16 @@
+{
+  "name": "voxtral-tts-vllm",
+  "tag": "4b",
+  "source": "mistralai/Voxtral-4B-TTS-2603",
+  "architecture": "voxtral-tts",
+  "type": "tts",
+  "adapter": "voxtral-tts-vllm",
+  "format": "pytorch",
+  "description": "Mistral Voxtral TTS 4B \u2014 preset-voice TTS, 9 languages, ~90ms TTFA",
+  "license": "CC-BY-NC-4.0",
+  "parameters": {
+    "sample_rate": 24000,
+    "default_voice": "neutral_female"
+  },
+  "adapter_package": "vox-voxtral"
+}

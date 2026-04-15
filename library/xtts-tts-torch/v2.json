@@ -1,0 +1,14 @@
+{
+  "name": "xtts-tts-torch",
+  "tag": "v2",
+  "source": "coqui/XTTS-v2",
+  "architecture": "xtts-v2",
+  "type": "tts",
+  "adapter": "xtts-tts-torch",
+  "format": "pytorch",
+  "description": "Coqui XTTS-v2 \u2014 multilingual voice cloning TTS",
+  "parameters": {
+    "sample_rate": 24000
+  },
+  "adapter_package": "vox-xtts"
+}

@@ -1,0 +1,16 @@
+{
+  "name": "kokoro-tts-onnx",
+  "tag": "v1.0",
+  "source": "onnx-community/Kokoro-82M-v1.0-ONNX",
+  "architecture": "kokoro",
+  "type": "tts",
+  "adapter": "kokoro-tts-onnx",
+  "format": "onnx",
+  "description": "Kokoro 82M ONNX \u2014 fast, lightweight TTS with preset voices",
+  "license": "Apache-2.0",
+  "parameters": {
+    "sample_rate": 24000,
+    "default_voice": "af_heart"
+  },
+  "adapter_package": "vox-kokoro"
+}

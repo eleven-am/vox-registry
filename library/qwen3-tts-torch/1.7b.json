@@ -1,0 +1,16 @@
+{
+  "name": "qwen3-tts-torch",
+  "tag": "1.7b",
+  "source": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice",
+  "architecture": "qwen3-tts",
+  "type": "tts",
+  "adapter": "qwen3-tts-torch",
+  "format": "pytorch",
+  "description": "Alibaba Qwen3-TTS 1.7B \u2014 multilingual speaker-based CustomVoice TTS with streaming",
+  "license": "Apache-2.0",
+  "parameters": {
+    "sample_rate": 24000,
+    "default_voice": "Ryan"
+  },
+  "adapter_package": "vox-qwen"
+}

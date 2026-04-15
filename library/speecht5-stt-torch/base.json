@@ -1,0 +1,15 @@
+{
+  "name": "speecht5-stt-torch",
+  "tag": "base",
+  "source": "microsoft/speecht5_asr",
+  "architecture": "speecht5-asr",
+  "type": "stt",
+  "adapter": "speecht5-stt-torch",
+  "format": "pytorch",
+  "description": "Microsoft SpeechT5 ASR \u2014 lightweight speech recognition",
+  "license": "MIT",
+  "parameters": {
+    "sample_rate": 16000
+  },
+  "adapter_package": "vox-microsoft"
+}

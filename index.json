@@ -1,198 +1,219 @@
 [
   {
-    "name": "dia",
+    "name": "dia-tts-torch",
     "tag": "1.6b",
     "type": "tts",
-    "description": "Dia 1.6B — multi-speaker dialogue TTS with non-verbal sounds",
+    "description": "Dia 1.6B \u2014 multi-speaker dialogue TTS with non-verbal sounds",
     "adapter_package": "vox-dia"
   },
   {
-    "name": "fish-speech",
+    "name": "fish-speech-tts-torch",
     "tag": "v1.4",
     "type": "tts",
-    "description": "Fish Speech 1.4 — high quality multilingual TTS with voice cloning",
+    "description": "Fish Speech 1.4 \u2014 high quality multilingual TTS with voice cloning",
     "adapter_package": "vox-fish-speech"
   },
   {
-    "name": "kokoro",
+    "name": "kokoro-tts-onnx",
     "tag": "v1.0",
     "type": "tts",
-    "description": "Kokoro 82M ONNX — fast, lightweight TTS with preset voices",
+    "description": "Kokoro 82M ONNX \u2014 fast, lightweight TTS with preset voices",
     "adapter_package": "vox-kokoro"
   },
   {
-    "name": "kokoro",
-    "tag": "v1.0-torch",
+    "name": "kokoro-tts-torch",
+    "tag": "v1.0",
     "type": "tts",
-    "description": "Kokoro 82M native runtime — PyTorch backend for Spark/CUDA systems",
+    "description": "Kokoro 82M native runtime \u2014 PyTorch backend for Spark/CUDA systems",
     "adapter_package": "vox-kokoro"
   },
   {
-    "name": "openvoice",
+    "name": "openvoice-tts-torch",
     "tag": "v1",
     "type": "tts",
-    "description": "MyShell OpenVoice V1 — instant voice cloning and style control",
+    "description": "MyShell OpenVoice V1 \u2014 instant voice cloning and style control",
     "adapter_package": "vox-openvoice"
   },
   {
-    "name": "orpheus",
+    "name": "orpheus-tts-torch",
     "tag": "3b",
     "type": "tts",
-    "description": "Orpheus 3B — LLM-based emotional TTS with inline emotion tags",
+    "description": "Orpheus 3B \u2014 LLM-based emotional TTS with inline emotion tags",
     "adapter_package": "vox-orpheus"
   },
   {
-    "name": "parakeet",
-    "tag": "tdt-0.6b",
-    "type": "stt",
-    "description": "NVIDIA Parakeet TDT 0.6B — top Open ASR Leaderboard model",
-    "adapter_package": "vox-parakeet"
-  },
-  {
-    "name": "parakeet",
+    "name": "parakeet-stt-nemo",
     "tag": "tdt-0.6b-v3",
     "type": "stt",
-    "description": "NVIDIA Parakeet TDT 0.6B v3 — 25 languages, streaming support",
+    "description": "NVIDIA Parakeet TDT 0.6B v3 \u2014 native NeMo/PyTorch CUDA ASR",
     "adapter_package": "vox-parakeet"
   },
   {
-    "name": "parakeet",
-    "tag": "tdt-0.6b-v3-cuda",
+    "name": "parakeet-stt-nemo",
+    "tag": "tdt-1.1b",
     "type": "stt",
-    "description": "NVIDIA Parakeet TDT 0.6B v3 — CUDA/NeMo backend alias",
+    "description": "NVIDIA Parakeet TDT 1.1B \u2014 larger native NeMo/PyTorch CUDA ASR",
     "adapter_package": "vox-parakeet"
   },
   {
-    "name": "parakeet",
-    "tag": "tdt-0.6b-v3-nemo",
+    "name": "parakeet-stt-onnx",
+    "tag": "tdt-0.6b",
     "type": "stt",
-    "description": "NVIDIA Parakeet TDT 0.6B v3 — native NeMo/PyTorch CUDA ASR",
+    "description": "NVIDIA Parakeet TDT 0.6B \u2014 top Open ASR Leaderboard model",
     "adapter_package": "vox-parakeet"
   },
   {
-    "name": "piper",
+    "name": "parakeet-stt-onnx",
+    "tag": "tdt-0.6b-v3",
+    "type": "stt",
+    "description": "NVIDIA Parakeet TDT 0.6B v3 \u2014 25 languages, streaming support",
+    "adapter_package": "vox-parakeet"
+  },
+  {
+    "name": "piper-tts-onnx",
     "tag": "en-us-lessac-medium",
     "type": "tts",
-    "description": "Piper English US Lessac Medium — single-voice ONNX TTS",
+    "description": "Piper English US Lessac Medium \u2014 single-voice ONNX TTS",
     "adapter_package": "vox-piper"
   },
   {
-    "name": "qwen3-asr",
+    "name": "qwen3-stt-torch",
     "tag": "0.6b",
     "type": "stt",
-    "description": "Alibaba Qwen3-ASR 0.6B — lightweight 52-language speech recognition",
+    "description": "Alibaba Qwen3-ASR 0.6B \u2014 lightweight 52-language speech recognition",
     "adapter_package": "vox-qwen"
   },
   {
-    "name": "qwen3-asr",
+    "name": "qwen3-stt-torch",
     "tag": "1.7b",
     "type": "stt",
-    "description": "Alibaba Qwen3-ASR 1.7B — 52 languages, word timestamps",
+    "description": "Alibaba Qwen3-ASR 1.7B \u2014 52 languages, word timestamps",
     "adapter_package": "vox-qwen"
   },
   {
-    "name": "qwen3-tts",
+    "name": "qwen3-tts-torch",
     "tag": "0.6b",
     "type": "tts",
-    "description": "Alibaba Qwen3-TTS 0.6B — lightweight multilingual speaker-based CustomVoice TTS",
+    "description": "Alibaba Qwen3-TTS 0.6B \u2014 lightweight multilingual speaker-based CustomVoice TTS",
     "adapter_package": "vox-qwen"
   },
   {
-    "name": "qwen3-tts",
+    "name": "qwen3-tts-torch",
     "tag": "1.7b",
     "type": "tts",
-    "description": "Alibaba Qwen3-TTS 1.7B — multilingual speaker-based CustomVoice TTS with streaming",
+    "description": "Alibaba Qwen3-TTS 1.7B \u2014 multilingual speaker-based CustomVoice TTS with streaming",
     "adapter_package": "vox-qwen"
   },
   {
-    "name": "sesame",
+    "name": "sesame-tts-torch",
     "tag": "csm-1b",
     "type": "tts",
-    "description": "Sesame CSM 1B — context-aware conversational speech model",
+    "description": "Sesame CSM 1B \u2014 context-aware conversational speech model",
     "adapter_package": "vox-sesame"
   },
   {
-    "name": "speecht5",
-    "tag": "asr",
+    "name": "speecht5-stt-torch",
+    "tag": "base",
     "type": "stt",
-    "description": "Microsoft SpeechT5 ASR — lightweight speech recognition",
+    "description": "Microsoft SpeechT5 ASR \u2014 lightweight speech recognition",
     "adapter_package": "vox-microsoft"
   },
   {
-    "name": "speecht5",
-    "tag": "tts",
+    "name": "speecht5-tts-torch",
+    "tag": "base",
     "type": "tts",
-    "description": "Microsoft SpeechT5 TTS — lightweight text-to-speech with speaker embeddings",
+    "description": "Microsoft SpeechT5 TTS \u2014 lightweight text-to-speech with speaker embeddings",
     "adapter_package": "vox-microsoft"
   },
   {
-    "name": "vibevoice",
+    "name": "vibevoice-tts-torch",
     "tag": "1.5b",
     "type": "tts",
-    "description": "Microsoft VibeVoice 1.5B — high-quality TTS with 64K token context",
+    "description": "Microsoft VibeVoice 1.5B \u2014 high-quality TTS with 64K token context",
     "adapter_package": "vox-microsoft"
   },
   {
-    "name": "vibevoice",
+    "name": "vibevoice-tts-torch",
     "tag": "realtime-0.5b",
     "type": "tts",
-    "description": "Microsoft VibeVoice Realtime 0.5B — ~300ms streaming TTS",
+    "description": "Microsoft VibeVoice Realtime 0.5B \u2014 ~300ms streaming TTS",
     "adapter_package": "vox-microsoft"
   },
   {
-    "name": "voxtral",
+    "name": "voxtral-stt-torch",
+    "tag": "24b",
+    "type": "stt",
+    "description": "Mistral Voxtral 24B \u2014 size alias for the larger Small 24B transcription model",
+    "adapter_package": "vox-voxtral"
+  },
+  {
+    "name": "voxtral-stt-torch",
     "tag": "mini-3b",
     "type": "stt",
-    "description": "Mistral Voxtral Mini 3B — audio understanding and transcription",
+    "description": "Mistral Voxtral Mini 3B \u2014 audio understanding and transcription",
     "adapter_package": "vox-voxtral"
   },
   {
-    "name": "voxtral",
+    "name": "voxtral-stt-torch",
     "tag": "realtime-4b",
     "type": "stt",
-    "description": "Mistral Voxtral Realtime 4B — sub-500ms latency transcription, 13 languages",
+    "description": "Mistral Voxtral Realtime 4B \u2014 sub-500ms latency transcription, 13 languages",
     "adapter_package": "vox-voxtral"
   },
   {
-    "name": "voxtral",
+    "name": "voxtral-stt-torch",
     "tag": "small-24b",
     "type": "stt",
-    "description": "Mistral Voxtral Small 24B — high-quality audio understanding and transcription",
+    "description": "Mistral Voxtral Small 24B \u2014 high-quality audio understanding and transcription",
     "adapter_package": "vox-voxtral"
   },
   {
-    "name": "voxtral",
-    "tag": "tts-4b",
+    "name": "voxtral-tts-vllm",
+    "tag": "4b",
     "type": "tts",
-    "description": "Mistral Voxtral TTS 4B — preset-voice TTS, 9 languages, ~90ms TTFA",
+    "description": "Mistral Voxtral TTS 4B \u2014 preset-voice TTS, 9 languages, ~90ms TTFA",
     "adapter_package": "vox-voxtral"
   },
   {
-    "name": "whisper",
+    "name": "whisper-stt-ct2",
     "tag": "base.en",
     "type": "stt",
-    "description": "OpenAI Whisper Base English — small and fast",
+    "description": "OpenAI Whisper Base English \u2014 small and fast",
     "adapter_package": "vox-whisper"
   },
   {
-    "name": "whisper",
+    "name": "whisper-stt-ct2",
     "tag": "large-v3",
     "type": "stt",
     "description": "OpenAI Whisper Large V3 via CTranslate2",
     "adapter_package": "vox-whisper"
   },
   {
-    "name": "whisper",
+    "name": "whisper-stt-ct2",
     "tag": "large-v3-turbo",
     "type": "stt",
-    "description": "OpenAI Whisper Large V3 Turbo — faster with minor quality loss",
+    "description": "OpenAI Whisper Large V3 Turbo \u2014 faster with minor quality loss",
     "adapter_package": "vox-whisper"
   },
   {
-    "name": "xtts",
+    "name": "whisper-stt-ct2",
+    "tag": "medium.en",
+    "type": "stt",
+    "description": "OpenAI Whisper Medium English \u2014 larger English CTranslate2 checkpoint",
+    "adapter_package": "vox-whisper"
+  },
+  {
+    "name": "whisper-stt-ct2",
+    "tag": "small.en",
+    "type": "stt",
+    "description": "OpenAI Whisper Small English \u2014 stronger English transcription than base.en",
+    "adapter_package": "vox-whisper"
+  },
+  {
+    "name": "xtts-tts-torch",
     "tag": "v2",
     "type": "tts",
-    "description": "Coqui XTTS-v2 — multilingual voice cloning TTS",
+    "description": "Coqui XTTS-v2 \u2014 multilingual voice cloning TTS",
     "adapter_package": "vox-xtts"
   }
 ]

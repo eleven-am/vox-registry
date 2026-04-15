@@ -1,0 +1,15 @@
+{
+  "name": "voxtral-stt-torch",
+  "tag": "24b",
+  "source": "mistralai/Voxtral-Small-24B-2507",
+  "architecture": "voxtral-small",
+  "type": "stt",
+  "adapter": "voxtral-stt-torch",
+  "format": "pytorch",
+  "description": "Mistral Voxtral 24B \u2014 size alias for the larger Small 24B transcription model",
+  "license": "Apache-2.0",
+  "parameters": {
+    "sample_rate": 16000
+  },
+  "adapter_package": "vox-voxtral"
+}

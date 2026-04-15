@@ -1,0 +1,15 @@
+{
+  "name": "qwen3-stt-torch",
+  "tag": "1.7b",
+  "source": "Qwen/Qwen3-ASR-1.7B",
+  "architecture": "qwen3-asr",
+  "type": "stt",
+  "adapter": "qwen3-stt-torch",
+  "format": "pytorch",
+  "description": "Alibaba Qwen3-ASR 1.7B \u2014 52 languages, word timestamps",
+  "license": "Apache-2.0",
+  "parameters": {
+    "sample_rate": 16000
+  },
+  "adapter_package": "vox-qwen"
+}

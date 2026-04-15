@@ -1,0 +1,15 @@
+{
+  "name": "whisper-stt-ct2",
+  "tag": "base.en",
+  "source": "Systran/faster-whisper-base.en",
+  "architecture": "whisper",
+  "type": "stt",
+  "adapter": "whisper-stt-ct2",
+  "format": "ct2",
+  "description": "OpenAI Whisper Base English \u2014 small and fast",
+  "license": "MIT",
+  "parameters": {
+    "sample_rate": 16000
+  },
+  "adapter_package": "vox-whisper"
+}

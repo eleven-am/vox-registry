@@ -1,0 +1,19 @@
+{
+  "name": "piper-tts-onnx",
+  "tag": "en-us-lessac-medium",
+  "source": "rhasspy/piper-voices",
+  "architecture": "piper",
+  "type": "tts",
+  "adapter": "piper-tts-onnx",
+  "format": "onnx",
+  "description": "Piper English US Lessac Medium \u2014 single-voice ONNX TTS",
+  "license": "MIT",
+  "parameters": {
+    "sample_rate": 22050
+  },
+  "files": [
+    "en/en_US/lessac/medium/en_US-lessac-medium.onnx",
+    "en/en_US/lessac/medium/en_US-lessac-medium.onnx.json"
+  ],
+  "adapter_package": "vox-piper"
+}

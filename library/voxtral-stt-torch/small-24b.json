@@ -1,0 +1,15 @@
+{
+  "name": "voxtral-stt-torch",
+  "tag": "small-24b",
+  "source": "mistralai/Voxtral-Small-24B-2507",
+  "architecture": "voxtral-small",
+  "type": "stt",
+  "adapter": "voxtral-stt-torch",
+  "format": "pytorch",
+  "description": "Mistral Voxtral Small 24B \u2014 high-quality audio understanding and transcription",
+  "license": "Apache-2.0",
+  "parameters": {
+    "sample_rate": 16000
+  },
+  "adapter_package": "vox-voxtral"
+}

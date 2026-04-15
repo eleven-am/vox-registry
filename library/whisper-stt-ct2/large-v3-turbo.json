@@ -1,0 +1,16 @@
+{
+  "name": "whisper-stt-ct2",
+  "tag": "large-v3-turbo",
+  "source": "deepdml/faster-whisper-large-v3-turbo-ct2",
+  "architecture": "whisper",
+  "type": "stt",
+  "adapter": "whisper-stt-ct2",
+  "format": "ct2",
+  "description": "OpenAI Whisper Large V3 Turbo \u2014 faster with minor quality loss",
+  "license": "MIT",
+  "parameters": {
+    "sample_rate": 16000,
+    "beam_size": 5
+  },
+  "adapter_package": "vox-whisper"
+}
