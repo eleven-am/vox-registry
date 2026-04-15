@@ -4,7 +4,7 @@
   "type": "stt",
   "adapter": "whisper",
   "format": "ct2",
-  "description": "OpenAI Whisper Large V3 Turbo \u2014 faster with minor quality loss",
+  "description": "OpenAI Whisper Large V3 Turbo — faster with minor quality loss",
   "license": "MIT",
   "parameters": {
     "sample_rate": 16000,

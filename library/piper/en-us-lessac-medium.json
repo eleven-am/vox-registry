@@ -4,10 +4,14 @@
   "type": "tts",
   "adapter": "piper",
   "format": "onnx",
-  "description": "Piper English US Lessac Medium voice",
+  "description": "Piper English US Lessac Medium — single-voice ONNX TTS",
   "license": "MIT",
   "parameters": {
     "sample_rate": 22050
   },
+  "files": [
+    "en/en_US/lessac/medium/en_US-lessac-medium.onnx",
+    "en/en_US/lessac/medium/en_US-lessac-medium.onnx.json"
+  ],
   "adapter_package": "vox-piper"
 }

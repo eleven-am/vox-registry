@@ -4,7 +4,7 @@
   "type": "tts",
   "adapter": "vibevoice-tts",
   "format": "pytorch",
-  "description": "Microsoft VibeVoice 1.5B \u2014 high-quality TTS with 64K token context",
+  "description": "Microsoft VibeVoice 1.5B — high-quality TTS with 64K token context",
   "license": "MIT",
   "parameters": {
     "sample_rate": 24000

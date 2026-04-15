@@ -4,7 +4,7 @@
   "type": "stt",
   "adapter": "qwen3-asr",
   "format": "pytorch",
-  "description": "Alibaba Qwen3-ASR 0.6B \u2014 lightweight 52-language speech recognition",
+  "description": "Alibaba Qwen3-ASR 0.6B — lightweight 52-language speech recognition",
   "license": "Apache-2.0",
   "parameters": {
     "sample_rate": 16000

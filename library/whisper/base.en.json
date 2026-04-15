@@ -4,7 +4,7 @@
   "type": "stt",
   "adapter": "whisper",
   "format": "ct2",
-  "description": "OpenAI Whisper Base English \u2014 small and fast",
+  "description": "OpenAI Whisper Base English — small and fast",
   "license": "MIT",
   "parameters": {
     "sample_rate": 16000

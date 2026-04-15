@@ -4,7 +4,7 @@
   "type": "tts",
   "adapter": "fish-speech",
   "format": "pytorch",
-  "description": "Fish Speech 1.4 \u2014 high quality multilingual TTS with voice cloning",
+  "description": "Fish Speech 1.4 — high quality multilingual TTS with voice cloning",
   "license": "CC-BY-NC-SA-4.0",
   "parameters": {
     "sample_rate": 44100

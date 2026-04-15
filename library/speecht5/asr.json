@@ -4,7 +4,7 @@
   "type": "stt",
   "adapter": "speecht5-stt",
   "format": "pytorch",
-  "description": "Microsoft SpeechT5 ASR \u2014 lightweight speech recognition",
+  "description": "Microsoft SpeechT5 ASR — lightweight speech recognition",
   "license": "MIT",
   "parameters": {
     "sample_rate": 16000

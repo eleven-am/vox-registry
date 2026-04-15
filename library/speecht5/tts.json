@@ -4,7 +4,7 @@
   "type": "tts",
   "adapter": "speecht5-tts",
   "format": "pytorch",
-  "description": "Microsoft SpeechT5 TTS \u2014 lightweight text-to-speech with speaker embeddings",
+  "description": "Microsoft SpeechT5 TTS — lightweight text-to-speech with speaker embeddings",
   "license": "MIT",
   "parameters": {
     "sample_rate": 16000

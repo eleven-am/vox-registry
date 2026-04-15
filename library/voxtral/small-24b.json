@@ -4,7 +4,7 @@
   "type": "stt",
   "adapter": "voxtral-stt",
   "format": "pytorch",
-  "description": "Mistral Voxtral Small 24B \u2014 high-quality audio understanding and transcription",
+  "description": "Mistral Voxtral Small 24B — high-quality audio understanding and transcription",
   "license": "Apache-2.0",
   "parameters": {
     "sample_rate": 16000

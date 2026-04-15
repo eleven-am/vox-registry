@@ -4,7 +4,7 @@
   "type": "stt",
   "adapter": "voxtral-stt",
   "format": "pytorch",
-  "description": "Mistral Voxtral Realtime 4B \u2014 sub-500ms latency transcription, 13 languages",
+  "description": "Mistral Voxtral Realtime 4B — sub-500ms latency transcription, 13 languages",
   "license": "Apache-2.0",
   "parameters": {
     "sample_rate": 16000

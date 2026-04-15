@@ -4,7 +4,7 @@
   "type": "tts",
   "adapter": "vibevoice-tts",
   "format": "pytorch",
-  "description": "Microsoft VibeVoice Realtime 0.5B \u2014 ~300ms streaming TTS",
+  "description": "Microsoft VibeVoice Realtime 0.5B — ~300ms streaming TTS",
   "license": "MIT",
   "parameters": {
     "sample_rate": 24000

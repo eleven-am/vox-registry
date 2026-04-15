@@ -4,15 +4,11 @@
   "type": "tts",
   "adapter": "kokoro",
   "format": "onnx",
-  "description": "Kokoro 82M ONNX \u2014 fast, lightweight TTS with preset voices",
+  "description": "Kokoro 82M ONNX — fast, lightweight TTS with preset voices",
   "license": "Apache-2.0",
   "parameters": {
     "sample_rate": 24000,
     "default_voice": "af_heart"
   },
-  "files": [
-    "model.onnx",
-    "voices.bin"
-  ],
   "adapter_package": "vox-kokoro"
 }

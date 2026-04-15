@@ -4,7 +4,7 @@
   "type": "stt",
   "adapter": "parakeet",
   "format": "onnx",
-  "description": "NVIDIA Parakeet TDT 0.6B v3 \u2014 25 languages, streaming support",
+  "description": "NVIDIA Parakeet TDT 0.6B v3 — 25 languages, streaming support",
   "license": "CC-BY-4.0",
   "parameters": {
     "sample_rate": 16000
