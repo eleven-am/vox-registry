@@ -7,13 +7,6 @@
     "adapter_package": "vox-dia"
   },
   {
-    "name": "fish-speech-tts-torch",
-    "tag": "v1.4",
-    "type": "tts",
-    "description": "Fish Speech 1.4 \u2014 high quality multilingual TTS with voice cloning",
-    "adapter_package": "vox-fish-speech"
-  },
-  {
     "name": "kokoro-tts-onnx",
     "tag": "v1.0",
     "type": "tts",
@@ -33,13 +26,6 @@
     "type": "tts",
     "description": "MyShell OpenVoice V1 \u2014 instant voice cloning and style control",
     "adapter_package": "vox-openvoice"
-  },
-  {
-    "name": "orpheus-tts-torch",
-    "tag": "3b",
-    "type": "tts",
-    "description": "Orpheus 3B \u2014 LLM-based emotional TTS with inline emotion tags",
-    "adapter_package": "vox-orpheus"
   },
   {
     "name": "parakeet-stt-nemo",
