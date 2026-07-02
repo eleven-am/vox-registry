@@ -1,5 +1,5 @@
 {
-  "source": "ResembleAI/chatterbox",
+  "source": "ResembleAI/chatterbox-turbo",
   "architecture": "chatterbox-turbo",
   "type": "tts",
   "adapter": "chatterbox-tts-turbo",
