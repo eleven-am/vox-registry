@@ -1,0 +1,41 @@
+{
+  "source": "Qwen/Qwen3-TTS-12Hz-0.6B-Base",
+  "architecture": "qwen3-tts",
+  "type": "tts",
+  "adapter": "qwen3-tts-torch",
+  "format": "pytorch",
+  "description": "Alibaba Qwen3-TTS 0.6B Base \u2014 lightweight zero-shot voice cloning from reference audio",
+  "license": "Apache-2.0",
+  "parameters": {
+    "sample_rate": 24000,
+    "mode": "clone"
+  },
+  "adapter_package": "vox-qwen",
+  "backends": {
+    "preferred": [
+      {
+        "name": "faster-qwen3-tts",
+        "requires": {
+          "python_modules": [
+            "torch",
+            "faster_qwen3_tts"
+          ],
+          "accelerators": [
+            "cuda"
+          ],
+          "min_versions": {
+            "torch": "2.5.1"
+          }
+        }
+      }
+    ],
+    "fallback": {
+      "name": "qwen-tts",
+      "requires": {
+        "python_modules": [
+          "torch"
+        ]
+      }
+    }
+  }
+}

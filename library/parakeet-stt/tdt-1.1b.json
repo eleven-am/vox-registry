@@ -1,0 +1,34 @@
+{
+  "type": "stt",
+  "description": "NVIDIA Parakeet TDT 1.1B \u2014 larger native NeMo/PyTorch CUDA ASR",
+  "license": "CC-BY-4.0",
+  "parameters": {
+    "sample_rate": 16000
+  },
+  "variants": [
+    {
+      "id": "nemo",
+      "aliases": [
+        "cuda"
+      ],
+      "priority": 100,
+      "fallback": true,
+      "requires": {
+        "python_modules": [
+          "torch"
+        ],
+        "accelerators": [
+          "cuda"
+        ]
+      },
+      "source": "nvidia/parakeet-tdt-1.1b",
+      "architecture": "parakeet-nemo",
+      "adapter": "parakeet-stt-nemo",
+      "format": "pytorch",
+      "files": [
+        "parakeet-tdt-1.1b.nemo"
+      ],
+      "adapter_package": "vox-parakeet"
+    }
+  ]
+}

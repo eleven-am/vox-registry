@@ -1,0 +1,13 @@
+{
+  "source": "ResembleAI/chatterbox",
+  "architecture": "chatterbox",
+  "type": "tts",
+  "adapter": "chatterbox-tts",
+  "format": "pytorch",
+  "description": "Resemble Chatterbox \u2014 expressive neural TTS with voice cloning",
+  "license": "MIT",
+  "parameters": {
+    "sample_rate": 24000
+  },
+  "adapter_package": "vox-chatterbox"
+}

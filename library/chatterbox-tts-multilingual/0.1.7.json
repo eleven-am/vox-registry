@@ -1,0 +1,13 @@
+{
+  "source": "ResembleAI/chatterbox",
+  "architecture": "chatterbox-multilingual",
+  "type": "tts",
+  "adapter": "chatterbox-tts-multilingual",
+  "format": "pytorch",
+  "description": "Resemble Chatterbox Multilingual \u2014 multilingual voice cloning TTS",
+  "license": "MIT",
+  "parameters": {
+    "sample_rate": 24000
+  },
+  "adapter_package": "vox-chatterbox"
+}
