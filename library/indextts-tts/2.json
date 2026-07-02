@@ -1,0 +1,13 @@
+{
+  "source": "IndexTeam/IndexTTS-2",
+  "architecture": "indextts2",
+  "type": "tts",
+  "adapter": "indextts-tts-torch",
+  "format": "pytorch",
+  "description": "IndexTTS2 \u2014 zero-shot voice cloning TTS",
+  "license": "other",
+  "parameters": {
+    "sample_rate": 24000
+  },
+  "adapter_package": "vox-indextts"
+}

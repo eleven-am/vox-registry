@@ -1,0 +1,13 @@
+{
+  "source": "SparkAudio/Spark-TTS-0.5B",
+  "architecture": "spark-tts",
+  "type": "tts",
+  "adapter": "spark-tts-torch",
+  "format": "pytorch",
+  "description": "Spark-TTS 0.5B \u2014 efficient LLM-based voice cloning TTS",
+  "license": "cc-by-nc-sa-4.0",
+  "parameters": {
+    "sample_rate": 16000
+  },
+  "adapter_package": "vox-spark"
+}

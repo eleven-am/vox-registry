@@ -1,0 +1,53 @@
+{
+  "architecture": "kokoro",
+  "type": "tts",
+  "description": "Kokoro 82M \u2014 hardware-aware TTS selection",
+  "license": "Apache-2.0",
+  "parameters": {
+    "sample_rate": 24000,
+    "default_voice": "af_heart"
+  },
+  "variants": [
+    {
+      "id": "torch",
+      "aliases": [
+        "cuda"
+      ],
+      "priority": 100,
+      "requires": {
+        "python_modules": [
+          "torch"
+        ],
+        "accelerators": [
+          "cuda"
+        ]
+      },
+      "source": "hexgrad/Kokoro-82M",
+      "architecture": "kokoro-torch",
+      "adapter": "kokoro-tts-torch",
+      "format": "pytorch",
+      "files": [
+        "kokoro-v1_0.pth"
+      ],
+      "adapter_package": "vox-kokoro"
+    },
+    {
+      "id": "onnx",
+      "aliases": [
+        "cpu"
+      ],
+      "priority": 0,
+      "fallback": true,
+      "requires": {
+        "python_modules": [
+          "onnxruntime"
+        ]
+      },
+      "source": "onnx-community/Kokoro-82M-v1.0-ONNX",
+      "architecture": "kokoro",
+      "adapter": "kokoro-tts-onnx",
+      "format": "onnx",
+      "adapter_package": "vox-kokoro"
+    }
+  ]
+}

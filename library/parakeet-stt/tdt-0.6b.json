@@ -1,0 +1,37 @@
+{
+  "type": "stt",
+  "description": "NVIDIA Parakeet TDT 0.6B \u2014 top Open ASR Leaderboard model",
+  "license": "CC-BY-4.0",
+  "parameters": {
+    "sample_rate": 16000
+  },
+  "variants": [
+    {
+      "id": "onnx",
+      "aliases": [
+        "cpu"
+      ],
+      "priority": 0,
+      "fallback": true,
+      "requires": {
+        "python_modules": [
+          "onnxruntime"
+        ]
+      },
+      "source": "istupakov/parakeet-tdt-0.6b-v2-onnx",
+      "runtime_source": "nvidia/parakeet-tdt-0.6b-v2",
+      "architecture": "parakeet",
+      "adapter": "parakeet-stt-onnx",
+      "format": "onnx",
+      "files": [
+        "config.json",
+        "decoder_joint-model.onnx",
+        "encoder-model.onnx",
+        "encoder-model.onnx.data",
+        "nemo128.onnx",
+        "vocab.txt"
+      ],
+      "adapter_package": "vox-parakeet"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "type": "stt",
+  "description": "NVIDIA Parakeet TDT 0.6B v3 \u2014 25 languages, streaming support",
+  "license": "CC-BY-4.0",
+  "parameters": {
+    "sample_rate": 16000
+  },
+  "variants": [
+    {
+      "id": "nemo",
+      "aliases": [
+        "cuda"
+      ],
+      "priority": 100,
+      "requires": {
+        "python_modules": [
+          "torch"
+        ],
+        "accelerators": [
+          "cuda"
+        ]
+      },
+      "source": "nvidia/parakeet-tdt-0.6b-v3",
+      "architecture": "parakeet-nemo",
+      "adapter": "parakeet-stt-nemo",
+      "format": "pytorch",
+      "files": [
+        "parakeet-tdt-0.6b-v3.nemo"
+      ],
+      "adapter_package": "vox-parakeet"
+    },
+    {
+      "id": "onnx",
+      "aliases": [
+        "cpu"
+      ],
+      "priority": 0,
+      "fallback": true,
+      "requires": {
+        "python_modules": [
+          "onnxruntime"
+        ]
+      },
+      "source": "istupakov/parakeet-tdt-0.6b-v3-onnx",
+      "runtime_source": "nvidia/parakeet-tdt-0.6b-v3",
+      "architecture": "parakeet",
+      "adapter": "parakeet-stt-onnx",
+      "format": "onnx",
+      "files": [
+        "config.json",
+        "decoder_joint-model.onnx",
+        "encoder-model.onnx",
+        "encoder-model.onnx.data",
+        "nemo128.onnx",
+        "vocab.txt"
+      ],
+      "adapter_package": "vox-parakeet"
+    }
+  ]
+}

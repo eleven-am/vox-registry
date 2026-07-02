@@ -1,0 +1,14 @@
+{
+  "source": "canopylabs/orpheus-tts-0.1-finetune-prod",
+  "architecture": "orpheus",
+  "type": "tts",
+  "adapter": "orpheus-tts-vllm",
+  "format": "pytorch",
+  "description": "Orpheus medium 3B \u2014 expressive vLLM-backed streaming TTS",
+  "license": "Apache-2.0",
+  "parameters": {
+    "sample_rate": 24000,
+    "default_voice": "tara"
+  },
+  "adapter_package": "vox-orpheus"
+}

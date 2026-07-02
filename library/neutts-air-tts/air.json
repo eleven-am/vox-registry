@@ -1,0 +1,13 @@
+{
+  "source": "neuphonic/neutts-air",
+  "architecture": "neutts-air",
+  "type": "tts",
+  "adapter": "neutts-air-tts-torch",
+  "format": "pytorch",
+  "description": "NeuTTS Air \u2014 compact voice cloning TTS",
+  "license": "Apache-2.0",
+  "parameters": {
+    "sample_rate": 24000
+  },
+  "adapter_package": "vox-neutts"
+}
