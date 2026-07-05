@@ -9,5 +9,19 @@
   "parameters": {
     "sample_rate": 44000
   },
+  "runtime": {
+    "required": {
+      "python_modules": [
+        "torch"
+      ],
+      "accelerators": [
+        "cuda"
+      ],
+      "min_vram_gb": 10,
+      "notes": [
+        "Dia Transformers backend is CUDA-only in Vox; no CPU/ONNX path is currently available."
+      ]
+    }
+  },
   "adapter_package": "vox-dia"
 }
