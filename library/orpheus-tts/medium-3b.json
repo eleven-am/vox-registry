@@ -10,5 +10,25 @@
     "sample_rate": 24000,
     "default_voice": "tara"
   },
+  "runtime": {
+    "required": {
+      "python_modules": [
+        "torch"
+      ],
+      "accelerators": [
+        "cuda"
+      ],
+      "systems": [
+        "linux"
+      ],
+      "machines": [
+        "x86_64"
+      ],
+      "min_vram_gb": 10,
+      "notes": [
+        "Orpheus uses the orpheus-speech/vLLM runtime; CPU and Spark/ARM NVIDIA paths are not currently packaged."
+      ]
+    }
+  },
   "adapter_package": "vox-orpheus"
 }
