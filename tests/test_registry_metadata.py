@@ -12,7 +12,7 @@ EXPRESSIVE_TTS_MODELS = {
     },
     "dia-tts/1.6b.json": {
         "adapter_package": "vox-dia",
-        "min_vram_gb": 10,
+        "min_vram_gb": 12,
     },
     "orpheus-tts/medium-3b.json": {
         "adapter_package": "vox-orpheus",
