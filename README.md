@@ -24,6 +24,31 @@ Each model JSON file contains:
 | `license` | no | License identifier |
 | `parameters` | no | Default model parameters |
 | `files` | no | Specific files to download (all if omitted) |
+| `runtime` | no | Pull-time runtime requirements and notes |
+
+## Runtime requirements
+
+Use `runtime.required` when a model has real hardware, platform, memory, or
+Python runtime constraints. Vox uses this metadata during `vox pull` before the
+adapter package is imported, so registry entries must describe requirements
+honestly instead of relying on adapter load failures.
+
+Supported requirement fields:
+
+| Field | Description |
+|-------|-------------|
+| `python_modules` | Python imports that must be available in the Vox runtime, such as `torch` |
+| `accelerators` | Required accelerator family, such as `cuda`, `mps`, `onnx_cuda`, or `cpu` |
+| `systems` | Supported operating systems, such as `linux`, `darwin`, or `windows` |
+| `machines` | Supported CPU architectures, such as `x86_64`, `arm64`, or `aarch64` |
+| `min_compute_capability` | Minimum NVIDIA compute capability, for example `80` for `sm_80` |
+| `min_cuda_version` | Minimum CUDA runtime version |
+| `min_vram_gb` | Minimum GPU memory in GiB |
+| `min_ram_gb` | Minimum system memory in GiB |
+| `notes` | Human-readable explanation of unsupported paths or special constraints |
+
+Expressive GPU-heavy TTS entries must include runtime requirements and clear
+notes for unsupported CPU/ONNX or Spark/ARM NVIDIA paths.
 
 ## Example
 
