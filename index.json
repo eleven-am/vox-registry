@@ -1,5 +1,12 @@
 [
   {
+    "name": "smart-turn",
+    "tag": "v3.2",
+    "type": "turn",
+    "description": "Pipecat Smart Turn v3.2 — audio-native conversational endpoint detection",
+    "adapter_package": "vox-smart-turn"
+  },
+  {
     "name": "parakeet-stt",
     "tag": "tdt-0.6b",
     "type": "stt",

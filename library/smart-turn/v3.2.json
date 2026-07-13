@@ -1,0 +1,61 @@
+{
+  "type": "turn",
+  "description": "Pipecat Smart Turn v3.2 — audio-native conversational endpoint detection",
+  "license": "BSD-2-Clause",
+  "parameters": {
+    "sample_rate": 16000
+  },
+  "variants": [
+    {
+      "id": "cpu",
+      "priority": 100,
+      "fallback": true,
+      "requires": {
+        "python_modules": [
+          "onnxruntime"
+        ]
+      },
+      "source": "pipecat-ai/smart-turn-v3",
+      "architecture": "smart-turn-v3",
+      "adapter": "smart-turn-v3",
+      "format": "onnx",
+      "files": [
+        "smart-turn-v3.2-cpu.onnx"
+      ],
+      "adapter_package": "vox-smart-turn",
+      "parameters": {
+        "sample_rate": 16000,
+        "provider": "cpu",
+        "model_file": "smart-turn-v3.2-cpu.onnx"
+      }
+    },
+    {
+      "id": "gpu",
+      "aliases": [
+        "cuda"
+      ],
+      "priority": 90,
+      "requires": {
+        "python_modules": [
+          "onnxruntime"
+        ],
+        "accelerators": [
+          "onnx_cuda"
+        ]
+      },
+      "source": "pipecat-ai/smart-turn-v3",
+      "architecture": "smart-turn-v3",
+      "adapter": "smart-turn-v3",
+      "format": "onnx",
+      "files": [
+        "smart-turn-v3.2-gpu.onnx"
+      ],
+      "adapter_package": "vox-smart-turn",
+      "parameters": {
+        "sample_rate": 16000,
+        "provider": "gpu",
+        "model_file": "smart-turn-v3.2-gpu.onnx"
+      }
+    }
+  ]
+}

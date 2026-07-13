@@ -55,3 +55,15 @@ def test_index_points_to_existing_model_files():
     for entry in index:
         path = ROOT / "library" / str(entry["name"]) / f"{entry['tag']}.json"
         assert path.is_file(), f"index entry does not exist: {path}"
+
+
+def test_smart_turn_defaults_to_cpu_and_supports_forced_gpu():
+    model = _load_model("smart-turn/v3.2.json")
+    variants = {variant["id"]: variant for variant in model["variants"]}
+
+    assert model["type"] == "turn"
+    assert model["license"] == "BSD-2-Clause"
+    assert variants["cpu"]["priority"] > variants["gpu"]["priority"]
+    assert variants["cpu"]["parameters"]["provider"] == "cpu"
+    assert variants["gpu"]["requires"]["accelerators"] == ["onnx_cuda"]
+    assert variants["gpu"]["parameters"]["provider"] == "gpu"
