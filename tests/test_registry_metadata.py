@@ -22,6 +22,10 @@ EXPRESSIVE_TTS_MODELS = {
         "adapter_package": "vox-indextts",
         "min_vram_gb": 10,
     },
+    "step-audio-editx/3b-awq.json": {
+        "adapter_package": "vox-step-audio-editx",
+        "min_vram_gb": 10,
+    },
 }
 
 
@@ -55,6 +59,19 @@ def test_index_points_to_existing_model_files():
     for entry in index:
         path = ROOT / "library" / str(entry["name"]) / f"{entry['tag']}.json"
         assert path.is_file(), f"index entry does not exist: {path}"
+
+
+def test_step_audio_editx_declares_external_audio_tokenizer_artifact():
+    model = _load_model("step-audio-editx/3b-awq.json")
+
+    assert model["source"] == "stepfun-ai/Step-Audio-EditX-AWQ-4bit"
+    assert model["adapter"] == "step-audio-editx-tts-vllm"
+    assert model["artifacts"] == [
+        {
+            "source": "stepfun-ai/Step-Audio-Tokenizer",
+            "prefix": "audio_tokenizer",
+        }
+    ]
 
 
 def test_smart_turn_defaults_to_cpu_and_supports_forced_gpu():

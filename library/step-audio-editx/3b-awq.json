@@ -1,0 +1,39 @@
+{
+  "source": "stepfun-ai/Step-Audio-EditX-AWQ-4bit",
+  "architecture": "step-audio-editx",
+  "type": "tts",
+  "adapter": "step-audio-editx-tts-vllm",
+  "format": "pytorch",
+  "description": "Step-Audio-EditX 3B AWQ - multilingual expressive voice-cloning TTS",
+  "license": "Apache-2.0",
+  "parameters": {
+    "sample_rate": 24000
+  },
+  "artifacts": [
+    {
+      "source": "stepfun-ai/Step-Audio-Tokenizer",
+      "prefix": "audio_tokenizer"
+    }
+  ],
+  "runtime": {
+    "required": {
+      "python_modules": [
+        "torch"
+      ],
+      "accelerators": [
+        "cuda"
+      ],
+      "systems": [
+        "linux"
+      ],
+      "machines": [
+        "x86_64"
+      ],
+      "min_vram_gb": 10,
+      "notes": [
+        "Step-Audio-EditX uses a CUDA-oriented vLLM runtime in Vox; CPU, ONNX, and Spark/ARM NVIDIA paths are not currently production-supported."
+      ]
+    }
+  },
+  "adapter_package": "vox-step-audio-editx"
+}

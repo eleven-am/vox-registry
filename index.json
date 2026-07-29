@@ -7,6 +7,13 @@
     "adapter_package": "vox-smart-turn"
   },
   {
+    "name": "step-audio-editx",
+    "tag": "3b-awq",
+    "type": "tts",
+    "description": "Step-Audio-EditX 3B AWQ — multilingual expressive voice-cloning TTS",
+    "adapter_package": "vox-step-audio-editx"
+  },
+  {
     "name": "parakeet-stt",
     "tag": "tdt-0.6b",
     "type": "stt",

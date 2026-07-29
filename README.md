@@ -24,7 +24,12 @@ Each model JSON file contains:
 | `license` | no | License identifier |
 | `parameters` | no | Default model parameters |
 | `files` | no | Specific files to download (all if omitted) |
+| `artifacts` | no | Additional HuggingFace sources downloaded into this model |
 | `runtime` | no | Pull-time runtime requirements and notes |
+
+Each `artifacts` entry requires a `source`, may provide a relative `prefix`, and
+may restrict the download with a non-empty `files` list. Vox rejects absolute
+paths, parent traversal, and target filename collisions across all sources.
 
 ## Runtime requirements
 
