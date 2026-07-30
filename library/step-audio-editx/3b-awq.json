@@ -35,5 +35,5 @@
       ]
     }
   },
-  "adapter_package": "vox-step-audio-editx==0.1.5"
+  "adapter_package": "vox-step-audio-editx==0.1.6"
 }
