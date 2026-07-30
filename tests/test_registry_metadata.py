@@ -23,7 +23,7 @@ EXPRESSIVE_TTS_MODELS = {
         "min_vram_gb": 10,
     },
     "step-audio-editx/3b-awq.json": {
-        "adapter_package": "vox-step-audio-editx==0.1.3",
+        "adapter_package": "vox-step-audio-editx==0.1.4",
         "min_vram_gb": 10,
     },
 }
