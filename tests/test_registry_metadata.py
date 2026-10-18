@@ -84,3 +84,37 @@ def test_smart_turn_defaults_to_cpu_and_supports_forced_gpu():
     assert variants["cpu"]["parameters"]["provider"] == "cpu"
     assert variants["gpu"]["requires"]["accelerators"] == ["onnx_cuda"]
     assert variants["gpu"]["parameters"]["provider"] == "gpu"
+
+
+def test_magpie_declares_cpu_runtime_and_companion_codec():
+    model = _load_model("magpie-tts/v2607-f16.json")
+    index = json.loads((ROOT / "index.json").read_text(encoding="utf-8"))
+    index_entry = next(
+        entry for entry in index if entry["name"] == "magpie-tts" and entry["tag"] == "v2607-f16"
+    )
+
+    assert model["source"] == "nvidia/magpie_tts_multilingual_357m"
+    assert model["adapter"] == "magpie-tts-gguf"
+    assert model["format"] == "gguf"
+    assert model["adapter_package"] == "vox-magpie==0.1.0"
+    assert model["parameters"] == {"sample_rate": 22050, "default_voice": "john"}
+    assert model["files"] == ["magpie_tts_multilingual_357m.v2607.f16.gguf"]
+    assert model["artifacts"] == [
+        {
+            "source": "nvidia/nemo-nano-codec-22khz-1.89kbps-21.5fps",
+            "prefix": "codec",
+            "files": ["nemo_nano_codec_22khz_1.89kbps_21.5fps.decoder.f16.gguf"],
+        }
+    ]
+    required = model["runtime"]["required"]
+    assert required["accelerators"] == ["cpu"]
+    assert required["systems"] == ["linux"]
+    assert required["machines"] == ["x86_64"]
+    assert required["min_ram_gb"] == 4
+    assert index_entry == {
+        "name": "magpie-tts",
+        "tag": "v2607-f16",
+        "type": "tts",
+        "description": model["description"],
+        "adapter_package": "vox-magpie==0.1.0",
+    }

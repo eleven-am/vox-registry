@@ -1,5 +1,12 @@
 [
   {
+    "name": "magpie-tts",
+    "tag": "v2607-f16",
+    "type": "tts",
+    "description": "NVIDIA MagpieTTS Multilingual 357M v2607 F16 — streaming CPU TTS",
+    "adapter_package": "vox-magpie==0.1.0"
+  },
+  {
     "name": "smart-turn",
     "tag": "v3.2",
     "type": "turn",
